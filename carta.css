@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arima', cursive;
+    background-color: #e8cba8;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+nav {
+    margin-bottom: 80%;
+    position: fixed;
+    display: flex;
+    z-index: 0;
+    background-color: #441f0b;
+    text-align: center;
+    height: 60px;
+    width: 100%; 
+    
+}
+ul{
+   padding-top: 40px;
+   text-align: center;
+   padding-right: 10px; ;
+   position: relative;
+}
+li {
+    display: inline;
+    border-top: 10px;
+   
+}
+
+a {
+    margin: 0 100px;
+    position: relative;
+    bottom: 20px;
+    font-size: 2em;
+    color: #e8cba8;
+    text-decoration: none;
+}
+
+.logo {
+    position: relative;
+    right: 12%;
+}
+
+.fondo {
+    position: relative;
+    z-index: -1;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+    position: sticky;
+    
+}
+.padre{
+    position: fixed;
+}
+.hijo{
+    position: relative;
+}
+section{
+    position: inherit;
+}
+h1 {
+    position: absolute;
+    z-index: index 0;;
+    left: 50%;
+    top: 15%;
+    font-size: 8em;
+    font-weight: 700;
+    color: #441f0b;
+    text-shadow: 0.01em 0.01em rgb(167, 167, 167);
+}
+
+.difuminado {
+    position: relative;
+    z-index: 2;
+    height: 30px;
+    bottom: 30px;
+    background-image: linear-gradient(to top, #e8cba8 0%, #e8cba8 60%, rgb(0,0,0,0) 100%);
+}
+
+footer {
+    background-color: #e8cba8;
+    height: 10px;
+    text-align: center;
+    position: relative;
+}
+
+i {
+    padding: 10px 10%;
+    padding-bottom: 50px;
+    font-size: 36px;
+}
+
+.galeria {
+    margin: 2% auto; 
+    height: 800px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+
+.luna {
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   width: 80%;
+    
+}
+
+.foto {
+    border-radius: 10%;
+    width: 20%;
+    height: 60%;
+}
+
+.pixel {
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   flex-direction: column;
+   order: -1;
+   width: 40%;
+}
+
+.mona {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 40%;
+
+}
