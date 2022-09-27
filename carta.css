@@ -143,3 +143,86 @@ i {
     width: 40%;
 
 }
+
+.container{
+    margin: 2% auto; 
+    height: 800px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(12,auto) ;
+    grid-template-rows:repeat(12,auto) ;
+    grid-column-gap: 2px;
+    border-style: solid;
+    border-top: 40%;
+    border-color: aqua;
+    border-top-width: 10px;
+    border-bottom-width:10px ;
+    border-right-width: 20px;
+    border-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 20px ;
+    max-height: 80px;
+    border-left-width: 2px;
+    border-radius: 10%;
+    top:10px;
+    bottom:20px;
+    z-index: 0;
+    font-family: 'Open Sans', sans-serif;
+    align-content:start ;
+    justify-content: end;
+}
+.cafe{
+    grid-column-start:1 ;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: center; 
+    align-items: center;
+    
+}
+.fotcafe{
+    border-radius:10% ;
+    width: 80%;
+    height: 80%;
+    
+}
+.tostado{
+    grid-column-start: 4;   
+    grid-column-end: 7;
+    grid-row-start:4 ;
+    grid-row-end: 5;
+    justify-content: start;
+}
+.fottostado{
+    border-radius: 10%;
+    width: 80%;
+    height: 80%;
+}
+.lemonpie{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:2 ;
+    grid-row-end:3 ;
+    justify-content: center;
+    align-items: center;
+}
+.fotlemonpie{
+    border-radius:10% ;
+    width: 120%;
+    height: 50%;
+}
+.chocotorta{
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start:6 ;
+    grid-row-end: 7;
+    justify-content: start;
+}
+.fotchocotorta{
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+}
