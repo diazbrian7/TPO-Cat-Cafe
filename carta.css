@@ -224,5 +224,10 @@ i {
     width: 100%;
     height: 100%;
 }
-
+.hola{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 100px;
+}
 }
