@@ -48,6 +48,16 @@ h1 {
     text-shadow: 0.03em 0.03em rgb(167, 167, 167);
 }
 
+h4 {
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    font-size: 3em;
+    font-weight: 700;
+    color: #441f0b;
+    text-shadow: 0.03em 0.03em rgb(167, 167, 167);
+}
+
 .difuminado {
     position: relative;
     height: 16px;
@@ -100,7 +110,7 @@ h3 {
     text-align: center;
 }
 
-p {
+.galeria p {
     color: #441f0b;
     text-align: justify;
 }
@@ -148,3 +158,23 @@ p {
     grid-column: 1/2;
     grid-row: 3/4;
 }
+
+.promos {
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 3%),url(../img/cafe.jpg);
+}
+
+
+
+.container {
+    display: none;
+}
+
+.hola{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 100px;
+}
+
