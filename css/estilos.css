@@ -33,15 +33,17 @@ body{
 }
 
 
-.fondo {
-    position: relative;
-    z-index: -1;
+header {
+    height: 700px;
+    width: 100%;
+    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(../img/gato-header-4b.jpg);
+    background-size: contain;
 }
 
 h1 {
     position: absolute;
-    left: 50%;
-    top: 15%;
+    left: 45%;
+    top: 10%;
     font-size: 8em;
     font-weight: 700;
     color: #441f0b;
@@ -50,20 +52,13 @@ h1 {
 
 h4 {
     position: absolute;
-    left: 70%;
-    top: 40%;
-    font-size: 3em;
+    font-style: italic;
+    left: 61%;
+    top: 35%;
+    font-size: 4em;
     font-weight: 700;
-    color: #441f0b;
-    text-shadow: 0.03em 0.03em rgb(167, 167, 167);
-}
-
-.difuminado {
-    position: relative;
-    height: 16px;
-    bottom: 16px;
-    z-index: 1;
-    background-image: linear-gradient(to top, #e8cba8 0%, #e8cba8 60%, rgb(0,0,0,0) 100%);
+    color: #e8cba8;
+    text-shadow: 0.03em 0.03em rgb(187, 187, 187);
 }
 
 footer {
