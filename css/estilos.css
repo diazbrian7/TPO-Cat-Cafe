@@ -66,14 +66,14 @@ header {
 footer {
     height: 100px;
     display: flex;
-    color:#441f0b;
     background-color: #e8cba8;
     justify-content: space-evenly;
     align-items: center;
 }
 
-i {
-      font-size: 3em;
+footer a {
+    font-size: 3em;
+    color: #441f0b;
 }
 
 .galeria {
