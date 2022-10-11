@@ -5,6 +5,8 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     font-family: 'Arima', cursive;
     background-color: #e8cba8;
 
@@ -34,43 +36,41 @@ body{
 
 
 header {
-    height: 700px;
+    display: flex;
+    justify-content: center;
+    height: 800px;
     width: 100%;
     background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(../img/gato-header-4b.jpg);
-    background-size: contain;
+    background-size: 100% 800px;
 }
 
-h1 {
-    position: absolute;
-    left: 45%;
-    top: 10%;
-    font-size: 8em;
+
+.titulo h1 {
+    font-size: 9em;
     font-weight: 700;
     color: #441f0b;
-    text-shadow: 0.03em 0.03em rgb(167, 167, 167);
+    text-shadow: 0.03em 0.03em rgb(217, 217, 217);
 }
 
-h4 {
-    position: absolute;
+.titulo h4 {
+    text-align: center;
     font-style: italic;
-    left: 61%;
-    top: 35%;
-    font-size: 4em;
+    font-size: 5em;
     font-weight: 700;
     color: #e8cba8;
-    text-shadow: 0.03em 0.03em rgb(187, 187, 187);
+    text-shadow: 0.03em 0.03em rgb(217, 217, 217);
 }
 
 footer {
+    height: 100px;
     display: flex;
     background-color: #e8cba8;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 i {
-    margin-top: 1%;
-    margin-bottom: 2%;
-    font-size: 3em;
+      font-size: 3em;
 }
 
 .galeria {
