@@ -53,6 +53,8 @@ header {
 }
 
 .titulo h4 {
+    position: relative;
+    bottom: 7%;
     text-align: center;
     font-style: italic;
     font-size: 5em;
