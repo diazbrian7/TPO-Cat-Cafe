@@ -12,34 +12,54 @@
     <title>Reserva</title>
 </head>
 <body>
-  <nav class="navbar">
-            
-    <div class="logo"><a href="index.html"><img src="img/logo4.png" alt="logo" width="100%" height="100%"></a></div>
-    <div class="menu menu1"><a href="index.html">Home</a></div>
-    <div class="menu menu2"><a href="nosotros.html">Nosotros</a></div>
-    <div class="menu menu3"><a href="carta.html">Carta</a></div>
-    <div class="menu menu4"><a href="reserva.html">Reserva</a></div>
-    <div></div>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><img src="imagenes/logo4.png" alt="logo" width="60px" height="60px"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="form">
+       <h2 class="form__title"> Reservas </h2>
+         <div class="form__container">
+
+                <div class="form__group">
+                    <input type="text" id="name" class="form__input" placeholder=" ">
+                    <label for="name" class="form__label">Nombre:</label>
+                    <span class="form__line"></span>
+                </div>
+
+               <div class="form__group">
+                    <input type="text" id="apellido" class="form__input" placeholder=" ">
+                    <label for="apellido" class="form__label">Apellido:</label>
+                    <span class="form__line"></span>
+                </div>
+
+               <div class="form__group">
+                    <input type="tel" id="tel" class="form__input" placeholder=" ">
+                    <label for="tel" class="form__label">Telefóno:</label>
+                    <span class="form__line"></span>
+               </div>
+
+               <div class="form__group">
+                    <input type="text" id="mail" class="form__input" placeholder=" ">
+                    <label for="mail" class="form__label">E-mail:</label>
+                    <span class="form__line"></span>
+               </div>
+               <input type="date" class="form__date" value="Fecha">
+               <input type="time" class="form__time " value="Hora">
+               <input type="submit" class="form__submit" value="Reservar">
+       </div>
+
+
+    </form>
     
-  </nav>
-    <div class="hola">
-        <div class="col-md">
-          <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
-            <label for="floatingInputGrid">Email address</label>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="form-floating">
-            <select class="form-select" id="floatingSelectGrid">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <label for="floatingSelectGrid">Works with selects</label>
-          </div>
-        </div>
-      </div>
+</body>
+</html>
 </body>
 </html>
