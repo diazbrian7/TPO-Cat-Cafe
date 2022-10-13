@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@700&display=swap" rel="stylesheet">
@@ -21,12 +21,12 @@
         <div></div>
     </nav>
 
-    <form class="form">
+    <form action=" " name="formulario" class="form" method="get">
        <h2 class="form__title"> Reservas </h2>
          <div class="form__container">
 
                 <div class="form__group">
-                    <input type="text" id="name" class="form__input" placeholder=" ">
+                    <input type="text" name="name" id="name" class="form__input" placeholder=" " >
                     <label for="name" class="form__label">Nombre:</label>
                     <span class="form__line"></span>
                 </div>
@@ -48,14 +48,52 @@
                     <label for="mail" class="form__label">E-mail:</label>
                     <span class="form__line"></span>
                </div>
-               <input type="date" class="form__date" value="Fecha">
-               <input type="time" class="form__time " value="Hora">
-               <input type="submit" class="form__submit" value="Reservar">
+               <div class="form__group">
+                <input type="number" name="personas" id="personas" class="form__input" placeholder=" ">
+                <label for="personas" class="form__label">Personas:</label>
+                <span class="form__line"></span>
+           </div>
+               <input type="date" class="form__date" value="Fecha" required>
+               <input type="time" class="form__time " value="Hora" required min ="09:00" max="19:00">
+               <input type="submit" name="btn" id="btn" class="form__submit" value="Reservar">
        </div>
 
 
     </form>
-    
+    <script>
+      (function(){
+        var formulario = document.getElementsByName('formulario')[0]
+        elementos = formulario.elements
+        boton = document.getElementById('btn')
+        
+        var validarNombre=function(e){
+          if(formulario.name.value == 0){
+            alert("Completa el nombre")
+            e.preventDefault()
+          }
+        }
+        var validarPersonas=function(e){
+          if(formulario.personas.value<=0){
+            alert("Tiene que haber una persona minimo")
+            e.preventDefault()
+          }         
+        }
+        var validarPersonas2 =function(e){
+          if(formulario.personas.value > 6){
+            alert("No pueden ser mas de 6 personas por mesa")
+            e.preventDefault()
+          }
+        }
+        
+        var validar = function(e){
+          validarNombre(e)
+          validarPersonas(e)
+          validarPersonas2(e)
+        }
+        formulario.addEventListener("submit",validar)
+
+      }())
+    </script>
 </body>
 </html>
 </body>
