@@ -84,6 +84,7 @@ footer a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 2em;
+    row-gap: 1em;
 }
 
 h2 {
@@ -120,11 +121,8 @@ h3 {
 }
 
 .gato milo {
-    display: flex;
     grid-column: 1/2;
     grid-row: 1/2;
-    flex-direction: column;
-    align-items: center;
 }
 
 .gato pixel {
@@ -155,6 +153,100 @@ h3 {
 .gato kirby {
     grid-column: 1/2;
     grid-row: 3/4;
+}
+
+@media screen and (max-width: 640px) {
+
+    .titulo h1 {
+        font-size: 15vw;
+    }
+
+    .titulo h4 {
+        font-size: 10vw;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #441f0b;
+        height: auto;
+    }
+
+    .logo {
+        height: 100px;
+        margin: 0;
+    }
+
+    .menu {
+        border-top: #e8cba8 1px solid;
+        margin: 0;
+        padding: 0 100%;
+    }
+  
+    .galeria {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gato {
+        margin: 5% 5%;
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px){
+    
+    .titulo h1 {
+        font-size: 10vw;
+    }
+
+    .titulo h4 {
+        font-size: 5vw;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .gato milo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .gato pixel {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .gato luna {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .gato mona {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .gato ginger {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .gato barney {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .gato kirby {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+
+
 }
 
 .promos {
