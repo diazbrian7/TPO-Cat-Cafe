@@ -110,6 +110,15 @@ footer a {
     color: #e8cba8;
 }
 
+.bienvenida a {
+    color:#91390a;
+}
+
+a:hover {
+    color: rgb(241, 144, 65);
+}
+
+
 .galeria {
     margin: 0 auto;
     width: 90%;
