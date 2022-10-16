@@ -9,6 +9,7 @@ body{
     flex-direction: column;
     font-family: 'Arima', cursive;
     background-color: #e8cba8;
+    overflow-x: hidden;
 
 }
 
@@ -26,6 +27,8 @@ body{
 
 .logo {
     margin-left: 30px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .menu > a {
@@ -64,18 +67,20 @@ header {
 }
 
 main {
-    margin: 2% 2%;
+    align-self: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 2%;
 }
 
 .bienvenida {
-    width: 30%;
+    width: 40%;
 }
 
 .bienvenida h3 {
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     color: rgb(241, 144, 65);
 }
 
@@ -83,12 +88,13 @@ main {
     text-align: justify;
     font-size: 1.5em;
     color: #441f0b;
-    margin: 2%;
+    margin: 2% 2%;
 }
 
 .mapa {
-    margin-top: 1%;
-    margin-left: 10%;
+    width: 40%;
+    margin: 2% 2%;
+    border: 2px rgb(241, 144, 65) solid;
 }
 
 footer {
@@ -185,12 +191,17 @@ footer a {
 
 @media screen and (max-width: 640px) {
 
-    .titulo h1 {
-        font-size: 15vw;
+    header {
+        display: flex;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(../img/gato-header-4b.jpg);
+        background-size: 100% 300px;
     }
 
-    .titulo h4 {
-        font-size: 10vw;
+    .titulo {
+        font-size: 40%;
     }
 
     .navbar {
@@ -211,7 +222,46 @@ footer a {
         margin: 0;
         padding: 0 100%;
     }
+
+    .menu > a {
+        font-size: 1.5em;
+    }
+
+    footer {
+        height: 50px;
+    }
+
+    footer a {
+        font-size: 1.5em;
+    }
+
+    main {
+        flex-direction: column;
+    }
   
+    .bienvenida {
+        width: 100%;
+    }
+    
+    .bienvenida h3 {
+        text-align: center;
+        font-size: 2em;
+        color: rgb(241, 144, 65);
+    }
+    
+    .bienvenida p{
+        text-align: justify;
+        font-size: 1em;
+        color: #441f0b;
+        margin: 2% 2%;
+    }
+    
+    .mapa {
+        width: 100%;
+        margin: 2% 2%;
+        border: 2px rgb(241, 144, 65) solid;
+    }
+    
     .galeria {
         display: flex;
         flex-direction: column;
