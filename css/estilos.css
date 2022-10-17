@@ -432,3 +432,56 @@ a:hover {
     transform: left bottom;
     transition: transform 4.5s;
 }
+
+#headcafe{
+    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(../img/cafe.jpg);;
+    opacity: 0.5;
+}
+#headsalado{
+    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(../img/tostado.jpg);;
+    opacity: 0.5;
+}
+#headtorta{
+    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(../img/chocotorta.jpg);;
+    opacity: 0.5;
+}
+
+.comida{
+    text-align: center;
+    margin-top: 100px;
+    color:#000000;
+}
+.pdos{
+    margin-top: 105px;
+    text-align: center;
+    color:rgb(0, 255, 0);
+}
+.padre{
+    display:flex;
+    flex-direction: column;
+}
+.hijo1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.hijo2{
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+}
+.father{
+    position:relative;
+    display: flex;
+    background-color: #441f0b;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    font-family: 'Arima', cursive;
+    font-size: 2em;
+    color: #e8cba8;
+    text-decoration: none;
+}
