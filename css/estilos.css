@@ -480,8 +480,14 @@ a:hover {
     align-items: center;
     height: 60px;
     width: 100%;
+    
+}
+.father a{
     font-family: 'Arima', cursive;
     font-size: 2em;
     color: #e8cba8;
     text-decoration: none;
+}
+.father a:hover{
+    color: rgb(241, 144, 65);
 }
