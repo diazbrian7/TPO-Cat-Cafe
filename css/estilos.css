@@ -32,7 +32,7 @@ header {
     justify-content: center;
     height: 800px;
     width: 100%;
-    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(../img/gato-header-4b.jpg);
+    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(img/gato-header-4b.jpg);
     background-size: 100% 800px;
 }
 .titulo h1 {
@@ -74,21 +74,15 @@ footer a {
 }
 
 h2 {
-@@ -120,11 +121,8 @@ h3 {
+    margin: 2%;
+    font-size: 4em;
+    color: #441f0b;
+    text-align: center;
+    border-top: 1px #441f0b solid;
+    border-bottom: 1px #441f0b solid;
 }
 
-.gato milo {
-    display: flex;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    flex-direction: column;
-    align-items: center;
-}
 
-.gato pixel {
-@@ -157,6 +155,100 @@ h3 {
-    grid-row: 3/4;
-}
 
 @media screen and (max-width: 640px) {
 
@@ -184,11 +178,6 @@ h2 {
 
 }
 
-.promos {
-    height: 300px;
-    width: 100%;
-    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 3%),url(../img/cafe.jpg);
-}
 .container {
     display: none;
 }
