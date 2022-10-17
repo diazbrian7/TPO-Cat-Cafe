@@ -3,12 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     display: flex;
     flex-direction: column;
     font-family: 'Arima', cursive;
     background-color: #e8cba8;
+    overflow-x: hidden;
+
 }
+
 .navbar {
     display: flex;
     background-color: #441f0b;
@@ -16,32 +20,42 @@ body{
     height: 60px;
     width: 100%;
 }
+
 .menu {
     margin-top: 0.5em;
 }
+
 .logo {
     margin-left: 30px;
+    max-width: 100px;
+    max-height: 100px;
 }
+
 .menu > a {
     font-size: 2em;
     color: #e8cba8;
     text-decoration: none;
 }
+
+
 header {
     display: flex;
     justify-content: center;
     height: 800px;
     width: 100%;
-    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(img/gato-header-4b.jpg);
+    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(../img/gato-header-4b.jpg);
     background-size: 100% 800px;
 }
+
+
 .titulo h1 {
     font-size: 9em;
     font-weight: 700;
     color: #441f0b;
     text-shadow: 0.03em 0.03em rgb(217, 217, 217);
 }
-.titulo h4 {
+
+.titulo h2 {
     position: relative;
     bottom: 7%;
     text-align: center;
@@ -51,17 +65,60 @@ header {
     color: #e8cba8;
     text-shadow: 0.03em 0.03em rgb(217, 217, 217);
 }
+
+main {
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 2%;
+}
+
+.bienvenida {
+    width: 40%;
+}
+
+.bienvenida h3 {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(241, 144, 65);
+}
+
+.bienvenida p{
+    text-align: justify;
+    font-size: 1.5em;
+    color: #441f0b;
+    margin: 2% 2%;
+}
+
+.mapa {
+    width: 40%;
+    margin: 2% 2%;
+    border: 2px rgb(241, 144, 65) solid;
+}
+
 footer {
     height: 100px;
     display: flex;
-    background-color: #e8cba8;
+    background-color:#441f0b;
     justify-content: space-evenly;
     align-items: center;
 }
+
 footer a {
     font-size: 3em;
-    color: #441f0b;
+    color: #e8cba8;
 }
+
+.bienvenida a {
+    color:#91390a;
+}
+
+a:hover {
+    color: rgb(241, 144, 65);
+}
+
+
 .galeria {
     margin: 0 auto;
     width: 90%;
@@ -73,7 +130,7 @@ footer a {
     row-gap: 1em;
 }
 
-h2 {
+.titulo-seccion {
     margin: 2%;
     font-size: 4em;
     color: #441f0b;
@@ -82,16 +139,78 @@ h2 {
     border-bottom: 1px #441f0b solid;
 }
 
+.foto {
+    height: 50%;
+    width: 70%;
+    border-radius: 50%;
 
+}
+
+.galeria h3 {
+    font-size: 3em;
+    color: #441f0b;
+    text-align: center;
+}
+
+.galeria p {
+    color: #441f0b;
+    text-align: justify;
+}
+
+.gato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gato milo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.gato pixel {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.gato luna {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.gato mona {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.gato ginger {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.gato barney {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.gato kirby {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
 
 @media screen and (max-width: 640px) {
 
-    .titulo h1 {
-        font-size: 15vw;
+    header {
+        display: flex;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(../img/gato-header-4b.jpg);
+        background-size: 100% 300px;
     }
 
-    .titulo h4 {
-        font-size: 10vw;
+    .titulo {
+        font-size: 40%;
     }
 
     .navbar {
@@ -113,6 +232,45 @@ h2 {
         padding: 0 100%;
     }
 
+    .menu > a {
+        font-size: 1.5em;
+    }
+
+    footer {
+        height: 50px;
+    }
+
+    footer a {
+        font-size: 1.5em;
+    }
+
+    main {
+        flex-direction: column;
+    }
+  
+    .bienvenida {
+        width: 100%;
+    }
+    
+    .bienvenida h3 {
+        text-align: center;
+        font-size: 2em;
+        color: rgb(241, 144, 65);
+    }
+    
+    .bienvenida p{
+        text-align: justify;
+        font-size: 1em;
+        color: #441f0b;
+        margin: 2% 2%;
+    }
+    
+    .mapa {
+        width: 100%;
+        margin: 2% 2%;
+        border: 2px rgb(241, 144, 65) solid;
+    }
+    
     .galeria {
         display: flex;
         flex-direction: column;
@@ -125,7 +283,7 @@ h2 {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1280px){
-
+    
     .titulo h1 {
         font-size: 10vw;
     }
@@ -143,32 +301,32 @@ h2 {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-
+    
     .gato pixel {
         grid-column: 2/3;
         grid-row: 1/2;
     }
-
+    
     .gato luna {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-
+    
     .gato mona {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-
+    
     .gato ginger {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-
+    
     .gato barney {
         grid-column: 2/3;
         grid-row: 3/4;
     }
-
+    
     .gato kirby {
         grid-column: 1/2;
         grid-row: 4/5;
@@ -178,15 +336,26 @@ h2 {
 
 }
 
+.promos {
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 3%),url(../img/cafe.jpg);
+}
+
+
+
 .container {
     display: none;
 }
+
 .hola{
     display: flex;
     justify-content: center;
     align-content: center;
     padding-top: 100px;
 }
+
+
 .form {
     background-color: antiquewhite;
     margin: auto;
@@ -197,18 +366,22 @@ h2 {
     border-radius: 10px;
     text-align: center;
 }
+
 .form__title {
     font-size: 40px;
     margin-bottom: 5px;
 }
+
 .form__container {
     margin-top: 15px;
     display: grid;
     gap: 30px;
 }
+
 .form__group {
     position: relative;
 }
+
 .form__input{
     width: 100%;
     background: none;
@@ -219,12 +392,15 @@ h2 {
     border-bottom: 1px solid;
     font-family: 'Arima', cursive;
 }
+
 .form__input:focus + .form__label, 
 .form__input:not(:placeholder-shown) + .form__label {
+
     transform: translateY(-12px) scale(.7);
     transform-origin: left top;
     color: #441f0b;
 }
+
 .form__label{
     color: rgb(241, 144, 65);
     cursor: pointer;
@@ -233,7 +409,9 @@ h2 {
     left: 5px;
     transform: translateY(10px);
     transition: transform .5s, color .3s;
+
 }
+
 .form__submit {
     background: orangered;
     color: white;
@@ -243,6 +421,7 @@ h2 {
     border: none;
     border-radius: .5em;
 }
+
 .form__line {
     position: absolute;
     bottom: 0;
@@ -252,56 +431,4 @@ h2 {
     transform: scale(0);
     transform: left bottom;
     transition: transform 4.5s;
-}
-#headcafe{
-    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(img/cafe.jpg);
-    opacity: 0.5;
-}
-#headsalado{
-    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(img/tostado.jpg);
-    opacity: 0.5;
-}
-#headtorta{
-    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(img/chocotorta.jpg);
-    opacity: 0.5;
-}
-
-.comida{
-    text-align: center;
-    margin-top: 100px;
-    color:#000000;
-}
-.pdos{
-    margin-top: 105px;
-    text-align: center;
-    color:rgb(0, 255, 0);
-}
-.padre{
-    display:flex;
-    flex-direction: column;
-}
-.hijo1{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-}
-.hijo2{
-    display: flex;
-    align-items: center;
-    align-content: flex-start;
-    justify-content: center;
-}
-.father{
-    position:relative;
-    display: flex;
-    background-color: #441f0b;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-    width: 100%;
-    font-family: 'Arima', cursive;
-    font-size: 2em;
-    color: #e8cba8;
-    text-decoration: none;
 }
