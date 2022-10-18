@@ -126,6 +126,31 @@ a:hover {
     text-shadow: 0.03em 0.03em #fff6ec;
 }
 
+.titulo-animado {
+    align-self: center;
+    margin: 2%;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 0.03em 0.03em #fff6ec;
+  }
+  .titulo-animado span {
+    position: relative;
+    display: inline-block;
+    color: #441f0b;
+    animation: saltos 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes saltos {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+
+}
+
 #paw1, #paw2 {
     color: #9f5125;
     font-size: 80%;
