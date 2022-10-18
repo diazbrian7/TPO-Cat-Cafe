@@ -118,6 +118,29 @@ a:hover {
     color: rgb(241, 144, 65);
 }
 
+.titulo-seccion {
+    margin: 2%;
+    font-size: 4em;
+    color: #441f0b;
+    text-align: center;
+    text-shadow: 0.03em 0.03em #fff6ec;
+}
+
+#paw1, #paw2 {
+    color: #9f5125;
+    font-size: 80%;
+    margin: 0 2% 0 2%;
+}
+
+#paw1 {
+    transform: rotate(15deg);
+    
+}
+
+#paw2 {
+    transform: rotate(-15deg);
+
+}
 
 .galeria {
     margin: 0 auto;
@@ -126,41 +149,51 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 2em;
-    row-gap: 1em;
-}
-
-.titulo-seccion {
-    margin: 2%;
-    font-size: 4em;
-    color: #441f0b;
-    text-align: center;
-    border-top: 1px #441f0b solid;
-    border-bottom: 1px #441f0b solid;
+    column-gap: 3em;
+    row-gap: 2em;
 }
 
 .foto {
     height: 60%;
     width: 60%;
     border-radius: 50%;
+    transition: all 300ms;
+}
 
+.foto:hover {
+    transform: scale(1.05);
 }
 
 .galeria h3 {
-    font-size: 3em;
-    color: #441f0b;
+    margin: 2%;
+    padding: 0 15% 0 15%;
+    background-color: #9f5125;
+    font-size: 2em;
+    color: #fff6ec;
     text-align: center;
+    border-radius: 10px;
+    
+    
 }
 
 .galeria p {
+    font-size: 1.2em;
     color: #441f0b;
     text-align: justify;
+    margin: 0 10% 0 10%;
+    line-height: 1.5;
 }
 
 .gato {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff6ec;
+    padding: 5% 0 5% 0;
+    border-radius: 10px;
+    border: 2px #9f5125 dashed;
+    outline: 10px #fff6ec solid;
+    margin-bottom: 10%;
 }
 
 .gato milo {
