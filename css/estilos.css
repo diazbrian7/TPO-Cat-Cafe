@@ -118,21 +118,13 @@ a:hover {
     color: rgb(241, 144, 65);
 }
 
-.titulo-seccion {
-    margin: 2%;
-    font-size: 4em;
-    color: #441f0b;
-    text-align: center;
-    text-shadow: 0.03em 0.03em #fff6ec;
-}
-
 .titulo-animado {
     align-self: center;
     margin: 2%;
     font-size: 4em;
-    text-align: center;
     text-shadow: 0.03em 0.03em #fff6ec;
   }
+
   .titulo-animado span {
     position: relative;
     display: inline-block;
@@ -338,6 +330,11 @@ a:hover {
         margin: 5% 5%;
     }
 
+    .titulo-animado {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 10vw;
+    }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1280px){
