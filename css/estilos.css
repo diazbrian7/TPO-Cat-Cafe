@@ -81,7 +81,7 @@ main {
 .bienvenida h3 {
     text-align: center;
     font-size: 3em;
-    color: rgb(241, 144, 65);
+    color: rgb(245, 157, 84);
 }
 
 .bienvenida p{
@@ -89,12 +89,13 @@ main {
     font-size: 1.5em;
     color: #441f0b;
     margin: 2% 2%;
+    text-indent: 1.5em;
 }
 
 .mapa {
     width: 40%;
     margin: 2% 2%;
-    border: 2px rgb(241, 144, 65) solid;
+    border: 4px rgb(245, 157, 84) dashed;
 }
 
 footer {
@@ -115,7 +116,7 @@ footer a {
 }
 
 a:hover {
-    color: rgb(241, 144, 65);
+    color: rgb(245, 157, 84);
 }
 
 .titulo-animado {
@@ -199,6 +200,7 @@ a:hover {
     text-align: justify;
     margin: 0 10% 0 10%;
     line-height: 1.5;
+    text-indent: 1.2em;
 }
 
 .gato {
@@ -305,7 +307,7 @@ a:hover {
     .bienvenida h3 {
         text-align: center;
         font-size: 2em;
-        color: rgb(241, 144, 65);
+        color: rgb(245, 157, 84);
     }
     
     .bienvenida p{
@@ -318,7 +320,7 @@ a:hover {
     .mapa {
         width: 100%;
         margin: 2% 2%;
-        border: 2px rgb(241, 144, 65) solid;
+        border: 2px rgb(245, 157, 84) solid;
     }
     
     .galeria {
@@ -397,8 +399,6 @@ a:hover {
     background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 3%),url(../img/cafe.jpg);
 }
 
-
-
 .container {
     display: none;
 }
@@ -409,7 +409,6 @@ a:hover {
     align-content: center;
     padding-top: 100px;
 }
-
 
 .form {
     background-color: antiquewhite;
@@ -545,7 +544,7 @@ a:hover {
     text-decoration: none;
 }
 .father a:hover{
-    color: rgb(241, 144, 65);
+    color: rgb(245, 157, 84);
 }
 
 .fondo2 {
@@ -557,8 +556,14 @@ a:hover {
 
 .quienes-somos {
     position: absolute;
+    display: grid;
+    grid-template-rows: 12% 44% 44%;
+    grid-template-areas: 
+    "h1 h1 h1"
+    "p1 p2 p3"
+    "p1 p2 p3";
     background-color: rgb(255,255,255,0.5);
-    height: 800px;
+    height: 1000px;
     margin: 10%;
     width: 80%;
 
@@ -568,5 +573,27 @@ a:hover {
     width: 100%;
     font-size: 4em;
     color: #441f0b;
+    grid-area: h1;
+
+}
+
+.quienes-somos p {
+    font-size: 1.5em;
+    color: #441f0b;
+    text-align: justify;
+    text-indent: 1.5em;
+    margin: 0 5% 0 5%;
+}
+
+.quienes-somos .p1 {
+    grid-area: p1;
+}
+
+.quienes-somos .p2{
+    grid-area: p2;
+}
+
+.quienes-somos .p3 {
+    grid-area: p3;
 }
 
