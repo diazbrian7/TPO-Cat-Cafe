@@ -547,3 +547,26 @@ a:hover {
 .father a:hover{
     color: rgb(241, 144, 65);
 }
+
+.fondo2 {
+    position: relative;
+    z-index: -1;
+    opacity: 0.5;
+    width: 100%;
+}
+
+.quienes-somos {
+    position: absolute;
+    background-color: rgb(255,255,255,0.5);
+    height: 800px;
+    margin: 10%;
+    width: 80%;
+
+}
+
+.quienes-somos h1 {
+    width: 100%;
+    font-size: 4em;
+    color: #441f0b;
+}
+
