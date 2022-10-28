@@ -85,10 +85,12 @@ main {
 }
 
 .bienvenida p{
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
     text-align: justify;
     font-size: 1.5em;
     color: #441f0b;
-    margin: 2% 2%;
+    margin: 0 5% 5% 5%;
     text-indent: 1.5em;
 }
 
@@ -195,6 +197,8 @@ a:hover {
 }
 
 .galeria p {
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
     font-size: 1.2em;
     color: #441f0b;
     text-align: justify;
@@ -552,17 +556,23 @@ a:hover {
     z-index: -1;
     opacity: 0.5;
     width: 100%;
+    height: 1000px;
+}
+
+.fondo2 > img {
+    height: 100%;
+    width: 100%;
 }
 
 .quienes-somos {
     position: absolute;
     display: grid;
-    grid-template-rows: 13% 29% 29% 29%;
+    grid-template-rows: 16% 28% 28% 28%;
     grid-template-areas: 
     "h1 h1 h1"
     "p1 p2 p3"
     "p1 p2 p3"
-    "p1 p2 ico";
+    "p1 p2 p3";
     background-color: rgb(255,255,255,0.5);
     height: 800px;
     margin: 10%;
@@ -579,10 +589,12 @@ a:hover {
 }
 
 .quienes-somos p {
-    font-size: 1.2em;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
     color: #441f0b;
     text-align: justify;
-    text-indent: 1.2em;
+    text-indent: 1em;
     margin: 0 8% 0 8%;
 }
 
@@ -598,16 +610,77 @@ a:hover {
     grid-area: p3;
 }
 
+.ir-reglas {
+    position: absolute;
+    z-index: 1;
+    height: 400px;
+    width: 40%;
+    right: 0;
+    bottom: -12%;
+}
+
 #icono-gatito {
     position: absolute;
-    grid-area: ico;
-    align-self: flex-end;
+    bottom: 0;
+    right: 2%;
+    transform: scaleX(-1);
 }
 
 #globo-texto {
+    position: absolute;
+    right: 30%;
+    bottom: 38%;
     color: #9f5125;
     font-size: 15em;
-    grid-area: ico;
-    justify-self: flex-end;
-    margin: 0 10% 20% 0;
+    transform: scaleX(-1);
+}
+
+#btn-reglas {
+    position: absolute;
+    right: 33%;
+    bottom: 55%;
+    width: 200px;
+    font-family: 'Arima', cursive;
+    text-decoration: underline;
+    color: #e8cba8;
+    border: none;
+    background-color: inherit;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#btn-reglas:hover {
+    color: rgb(245, 157, 84);
+}
+
+.overlay {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0,0,0,.3);
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup-reglas {
+    background-color:#e8cba8;
+    box-shadow: 0px 0px 5px 0px rgb(0,0,0,.3);
+    width: 50%;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-cerrar-popup {
+    font-size: 1.2em;
+    display: block;
+    text-align: right;
+    color:#441f0b;
 }

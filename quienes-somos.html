@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap" rel="stylesheet">
     <link rel="icon" href="logo2.ico">
     <script src="https://kit.fontawesome.com/15afba09d8.js" crossorigin="anonymous"></script>
     <title>Quiénes somos</title>
@@ -23,24 +24,36 @@
         <div class="fill"></div>
     </nav>
 
-    <img src="img/quienes-somos.jpg" alt="Quiénes somos" class="fondo2"></div>
+    <div class="fondo2"><img src="img/quienes-somos.jpg" alt="Quiénes somos"></div>
     
     <main class="quienes-somos">
         <h1><i class="fa-solid fa-paw" id="paw1"></i>¿Quiénes somos?<i class="fa-solid fa-paw" id="paw2"></i></h1>
-        <p class="p1">“El Bigotero” nace en 2022 como uno de los primeros Cat Café de Buenos Aires. Pero ¿Qué es un Cat Café? También conocido como “Café de gatos”, se trata de una cafetería temática donde convive una hermosa familia de michis, y la idea es que puedas venir a pasar una bonita tarde con ellos mientras disfrutas de una deliciosa merienda. Podés acariciarlos, darles de comer, jugar con ellos, o simplemente notar su compañía mientras tomas un rico café junto a todo lo que ofrece nuestra carta.</p>
-        <p class="p2">La idea de crear este espacio gatuno surge de nuestro amor por los gatos y la misión de contribuir al amoroso y respetuoso lazo entre michis y humanos. Se trata también de un lugar ideal para hacer Gatoterapia.</p>
-        <p class="p3">¿Y de qué se trata la gatoterapia? Refiere a la capacidad de estas mascotas de aportar beneficios a la salud de las personas. Siendo animales silenciosos y tranquilos, la convivencia con ellos ayuda a combatir el estrés, la ansiedad y el bajo estado de ánimo. Su dulce y cálida compañía y, específicamente, su ronroneo, disponen estados de relajación y equilibrio emocional, alcanzado incluso propiedades curativas.</p>
-        <img src="img/gatito.png" alt="Ícono de gatito" id="icono-gatito">
-        <i class="fa-solid fa-comment" id="globo-texto"></i>
+        <div class="p1"><p>“El Bigotero” nace en 2022 como uno de los primeros Cat Café de Buenos Aires. Pero...¿Qué es un Cat Café?</p><p>También conocido como “Café de gatos”, se trata de una cafetería temática donde convive una hermosa familia de michis, y la idea es que puedas venir a pasar una bonita tarde con ellos mientras disfrutas de una deliciosa merienda.</p><p>Podés acariciarlos, darles de comer, jugar con ellos, o simplemente observarlos y disfrutar de su compañía, mientras tomás un rico café junto a todo lo que ofrece nuestra carta.</p> <p>La idea de crear este espacio gatuno surge de nuestro amor por los gatos, y de la misión de contribuir al amoroso y respetuoso lazo entre michis y humanos. Además, se trata de aportar un lugar ideal para hacer Gatoterapia.</p></div>
+        <div class="p2"><p>¿Y de qué se trata la gatoterapia? Refiere a la capacidad de estas mascotas de aportar beneficios a la salud de las personas. Siendo animales silenciosos y tranquilos, la convivencia con ellos ayuda a combatir el estrés, la ansiedad y el bajo estado de ánimo. Su dulce y cálida compañía y, específicamente, su ronroneo, disponen estados de relajación y equilibrio emocional, alcanzando incluso propiedades curativas.</p></div>
+        <div class="p3"><p>Podes conocer a nuestros michis acá. Pero antes de venir, es importante que leas nuestras reglas de convivencia.</p></div>
     </main>
 
-    
+    <aside class="ir-reglas">
+        <i class="fa-solid fa-comment" id="globo-texto"></i>
+        <img src="img/gatito.png" alt="Ícono de gatito" id="icono-gatito">
+        <button id="btn-reglas">¡No olvides revisar nuestras reglas!</button>
+    </aside>
+
+    <div class="overlay" id="overlay">
+        <div class="popup-reglas" id="popup-reglas">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h1>Reglas</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque harum voluptatem eius cumque, distinctio, quibusdam impedit temporibus eligendi excepturi explicabo quas. Dolorum eaque dolorem, assumenda asperiores labore, non similique nesciunt doloremque debitis voluptas adipisci sequi, nostrum dolor. Velit nemo expedita maxime tempora eius ad minus fugiat esse molestias fugit.</p>
+        </div>
+    </div>
 
     <footer>
         <a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
         <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
     </footer>
+
+    <script src="js/popup.js"></script>
  
 </body>
 </html>
