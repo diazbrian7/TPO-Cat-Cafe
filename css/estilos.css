@@ -25,6 +25,10 @@ body{
     margin-top: 0.5em;
 }
 
+.menu.actual a{
+    text-decoration: underline;
+}
+
 .logo {
     margin-left: 30px;
     max-width: 100px;
@@ -118,6 +122,7 @@ footer a {
 }
 
 a:hover {
+    transition: .3s ease all;
     color: rgb(245, 157, 84);
 }
 
@@ -597,7 +602,7 @@ a:hover {
     color: #441f0b;
     text-align: justify;
     text-indent: 1em;
-    margin: 0 8% 0 8%;
+    margin: 0 10% 2% 10%;
 }
 
 .info-quienes-somos .p1 {
@@ -652,6 +657,7 @@ a:hover {
 }
 
 #btn-reglas:hover {
+    transition: .3s ease all;
     color: rgb(245, 157, 84);
 }
 
@@ -678,6 +684,13 @@ a:hover {
     border-radius: 3px;
     padding: 20px;
     text-align: center;
+    opacity: 0;
+    transition: 1s ease all;
+}
+
+.popup-reglas.active {
+    opacity: 1;
+
 }
 
 .btn-cerrar-popup {
