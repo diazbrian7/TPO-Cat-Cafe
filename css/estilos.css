@@ -551,20 +551,22 @@ a:hover {
     color: rgb(245, 157, 84);
 }
 
-.fondo2 {
+.quienes-somos {
     position: relative;
-    z-index: -1;
-    opacity: 0.5;
+    margin: 0;
     width: 100%;
     height: 1000px;
 }
 
-.fondo2 > img {
+.quienes-somos > img {
+    position: relative;
+    z-index: -1;
+    opacity: 0.5;
     height: 100%;
     width: 100%;
 }
 
-.quienes-somos {
+.info-quienes-somos {
     position: absolute;
     display: grid;
     grid-template-rows: 16% 28% 28% 28%;
@@ -575,12 +577,12 @@ a:hover {
     "p1 p2 p3";
     background-color: rgb(255,255,255,0.5);
     height: 800px;
-    margin: 10%;
+    margin: 5%;
     width: 80%;
 
 }
 
-.quienes-somos h1 {
+.info-quienes-somos h1 {
     width: 100%;
     font-size: 4em;
     color: #441f0b;
@@ -588,7 +590,7 @@ a:hover {
 
 }
 
-.quienes-somos p {
+.info-quienes-somos p {
     font-family: 'Assistant', sans-serif;
     font-weight: bold;
     font-size: 1.3em;
@@ -598,30 +600,30 @@ a:hover {
     margin: 0 8% 0 8%;
 }
 
-.quienes-somos .p1 {
+.info-quienes-somos .p1 {
     grid-area: p1;
 }
 
-.quienes-somos .p2{
+.info-quienes-somos .p2{
     grid-area: p2;
 }
 
-.quienes-somos .p3 {
+.info-quienes-somos .p3 {
     grid-area: p3;
 }
 
-.ir-reglas {
+.a-reglas {
     position: absolute;
     z-index: 1;
-    height: 400px;
+    height: 40%;
     width: 40%;
     right: 0;
-    bottom: -12%;
+    bottom: 0;
 }
 
 #icono-gatito {
     position: absolute;
-    bottom: 0;
+    bottom: -6%;
     right: 2%;
     transform: scaleX(-1);
 }
@@ -629,7 +631,7 @@ a:hover {
 #globo-texto {
     position: absolute;
     right: 30%;
-    bottom: 38%;
+    bottom: 31%;
     color: #9f5125;
     font-size: 15em;
     transform: scaleX(-1);
@@ -638,7 +640,7 @@ a:hover {
 #btn-reglas {
     position: absolute;
     right: 33%;
-    bottom: 55%;
+    bottom: 50%;
     width: 200px;
     font-family: 'Arima', cursive;
     text-decoration: underline;
