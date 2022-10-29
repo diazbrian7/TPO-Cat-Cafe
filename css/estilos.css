@@ -660,6 +660,63 @@ button.seleccionado {
 
 @media screen and (max-width: 800px) {
 
+    .quienes-somos {
+        height: 1200px;
+    }
+    
+    .quienes-somos > img {
+        height: 100%;
+    }
+    
+    .info-quienes-somos {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+    }
+    
+    .info-quienes-somos h1 {
+        font-size: 2em;
+    
+    }
+    
+    .info-quienes-somos p {
+        font-size: 1em;
+        text-indent: 1em;
+    }
+    
+    #icono-gatito {
+        height: 150px;
+        width: 150px;
+    }
+    
+    #globo-texto {
+        right: 52%;
+        bottom: 7%;
+        font-size: 9em;
+    }
+    
+    #btn-reglas {
+        font-size: 1em;
+        position: absolute;
+        right: 42%;
+        bottom: 17%;
+        width: 200px;
+    }
+  
+    .popup-reglas {
+        height: 80%;
+        overflow: scroll;
+    }
+    
+    .popup-reglas h2 {
+        font-size: 1.5em;
+    }
+    
+    .popup-reglas li {
+        font-size: 1em;
+    }
+
+
     .hamburger {
         display: inline;
         border-top: #e8cba8 1px solid;
