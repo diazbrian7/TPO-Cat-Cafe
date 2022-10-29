@@ -320,6 +320,7 @@ a:hover {
 
 .info-quienes-somos p a {
     color:#9f5125;
+    text-decoration: none;
 }
 
 .info-quienes-somos p a:hover {
