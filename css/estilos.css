@@ -259,6 +259,16 @@ a:hover {
     grid-row: 3/4;
 }
 
+.gato dio {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.gato la-micha {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
 @media screen and (max-width: 640px) {
 
     header {
@@ -360,7 +370,7 @@ a:hover {
 
     .galeria {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
     }
 
     .gato milo {
@@ -396,6 +406,16 @@ a:hover {
     .gato kirby {
         grid-column: 1/2;
         grid-row: 4/5;
+    }
+
+    .gato dio {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .gato la-micha {
+        grid-column: 1/2;
+        grid-row: 5/6;
     }
 
 
