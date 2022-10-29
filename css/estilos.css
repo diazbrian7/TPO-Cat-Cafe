@@ -644,10 +644,16 @@ button.seleccionado {
     transition: transform 4.5s;
 }
 
+.reserva {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
 #gatito-reserva {
     position: absolute;
-    bottom: -225px;
-    right: 18%;
+    bottom: -1%;
+    right: 20%;
 }
 
 .hamburger{

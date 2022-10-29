@@ -24,47 +24,51 @@
         <div class="fill"></div>
     </nav>
 
-    <form action=" " name="formulario" class="form" method="get">
-       <h2 class="form__title">Reservas</h2>
-         <div class="form__container">
-
-                <div class="form__group">
-                    <input type="text" name="name" id="name" class="form__input" placeholder=" " >
-                    <label for="name" class="form__label">Nombre:</label>
-                    <span class="form__line"></span>
+    <main class="reserva">
+        <form action=" " name="formulario" class="form" method="get">
+            <h2 class="form__title">Reservas</h2>
+              <div class="form__container">
+     
+                     <div class="form__group">
+                         <input type="text" name="name" id="name" class="form__input" placeholder=" " >
+                         <label for="name" class="form__label">Nombre:</label>
+                         <span class="form__line"></span>
+                     </div>
+     
+                    <div class="form__group">
+                         <input type="text" id="apellido" class="form__input" placeholder=" ">
+                         <label for="apellido" class="form__label">Apellido:</label>
+                         <span class="form__line"></span>
+                     </div>
+     
+                    <div class="form__group">
+                         <input type="tel" id="tel" class="form__input" placeholder=" ">
+                         <label for="tel" class="form__label">Telefóno:</label>
+                         <span class="form__line"></span>
+                    </div>
+     
+                    <div class="form__group">
+                         <input type="text" id="mail" class="form__input" placeholder=" ">
+                         <label for="mail" class="form__label">E-mail:</label>
+                         <span class="form__line"></span>
+                    </div>
+                    <div class="form__group">
+                     <input type="number" name="personas" id="personas" class="form__input" placeholder=" ">
+                     <label for="personas" class="form__label">Personas:</label>
+                     <span class="form__line"></span>
                 </div>
+                    <input type="date" class="form__date" value="Fecha" required>
+                    <input type="time" class="form__time " value="Hora" required min ="09:00" max="19:00">
+                    <input type="submit" name="btn" id="btn" class="form__submit" value="Reservar">
+            </div>
+     
+     
+         </form>
 
-               <div class="form__group">
-                    <input type="text" id="apellido" class="form__input" placeholder=" ">
-                    <label for="apellido" class="form__label">Apellido:</label>
-                    <span class="form__line"></span>
-                </div>
+        <img src="img/gatito-reserva.png" alt="Gatito de Reserva" id="gatito-reserva">
 
-               <div class="form__group">
-                    <input type="tel" id="tel" class="form__input" placeholder=" ">
-                    <label for="tel" class="form__label">Telefóno:</label>
-                    <span class="form__line"></span>
-               </div>
+    </main>
 
-               <div class="form__group">
-                    <input type="text" id="mail" class="form__input" placeholder=" ">
-                    <label for="mail" class="form__label">E-mail:</label>
-                    <span class="form__line"></span>
-               </div>
-               <div class="form__group">
-                <input type="number" name="personas" id="personas" class="form__input" placeholder=" ">
-                <label for="personas" class="form__label">Personas:</label>
-                <span class="form__line"></span>
-           </div>
-               <input type="date" class="form__date" value="Fecha" required>
-               <input type="time" class="form__time " value="Hora" required min ="09:00" max="19:00">
-               <input type="submit" name="btn" id="btn" class="form__submit" value="Reservar">
-       </div>
-
-
-    </form>
-
-    <img src="img/gatito-reserva.png" alt="Gatito de Reserva" id="gatito-reserva">
 
     <script src="js/validacion.js"></script>
 
