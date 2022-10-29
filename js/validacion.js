@@ -11,13 +11,13 @@
     }
     var validarPersonas=function(e){
       if(formulario.personas.value<=0){
-        alert("Tiene que haber una persona minimo")
+        alert("Tiene que haber una persona como mínimo")
         e.preventDefault()
       }         
     }
     var validarPersonas2 =function(e){
       if(formulario.personas.value > 6){
-        alert("No pueden ser mas de 6 personas por mesa")
+        alert("No puede haber más de 6 personas por mesa")
         e.preventDefault()
       }
     }
