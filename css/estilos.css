@@ -646,8 +646,8 @@ button.seleccionado {
 
 #gatito-reserva {
     position: absolute;
-    bottom: 9%;
-    right: 25%;
+    bottom: -225px;
+    right: 18%;
 }
 
 .hamburger{
