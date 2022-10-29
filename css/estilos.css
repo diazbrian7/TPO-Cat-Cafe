@@ -269,400 +269,6 @@ a:hover {
     grid-row: 3/4;
 }
 
-.hamburger{
-    display: none;
-}
-
-#hamburger {
-    font-size: 2em;
-    color: #e8cba8;
-}
-
-
-@media screen and (max-width: 800px) {
-
-    .hamburger {
-        display: inline;
-        border-top: #e8cba8 1px solid;
-        margin: 0;
-        padding: 0 100%;
-
-    }
-
-    .menu {
-        display: none;
-        opacity: 0;
-        transition: 3s ease all;
-    }
-
-    .desplegado {
-        display: inline;
-        opacity: 1;
-    }
-
-    header {
-        display: flex;
-        justify-content: center;
-        height: 300px;
-        width: 100%;
-        background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(../img/gato-header-4b.jpg);
-        background-size: 100% 300px;
-    }
-
-    .titulo {
-        font-size: 40%;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #441f0b;
-        height: auto;
-    }
-
-    .logo {
-        height: 100px;
-        margin: 0;
-    }
-
-    .menu {
-        border-top: #e8cba8 1px solid;
-        margin: 0;
-        padding: 0 100%;
-    }
-
-    .menu > a {
-        font-size: 1.5em;
-    }
-
-    footer {
-        height: 100px;
-    }
-
-    footer a {
-        font-size: 2em;
-    }
-
-    main {
-        flex-direction: column;
-    }
-  
-    .bienvenida {
-        width: 100%;
-    }
-    
-    .bienvenida h3 {
-        text-align: center;
-        font-size: 2em;
-        color: rgb(245, 157, 84);
-    }
-    
-    .bienvenida p{
-        text-align: justify;
-        font-size: 1em;
-        color: #441f0b;
-        margin: 2% 2%;
-    }
-    
-    .mapa {
-        width: 100%;
-        margin: 2% 2%;
-        border: 2px rgb(245, 157, 84) solid;
-    }
-    
-    .galeria {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .gato {
-        margin: 5% 5%;
-    }
-
-    .titulo-animado {
-        margin-top: 10%;
-        margin-bottom: 10%;
-        font-size: 10vw;
-    }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1280px){
-    
-    .titulo h1 {
-        font-size: 10vw;
-    }
-
-    .titulo h4 {
-        font-size: 5vw;
-    }
-
-    .galeria {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-
-    .gato milo {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    
-    .gato pixel {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    
-    .gato luna {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    
-    .gato mona {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    
-    .gato ginger {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    
-    .gato barney {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    
-    .gato kirby {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .gato dio {
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
-
-    .gato la-micha {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-
-
-
-}
-
-.promos {
-    height: 300px;
-    width: 100%;
-    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 3%),url(../img/cafe.jpg);
-}
-
-.container {
-    display: none;
-}
-
-.hola{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-top: 100px;
-}
-
-.form {
-    background-color: antiquewhite;
-    margin: auto;
-    margin-top: 50px;
-    width: 90%;
-    max-width: 400px;
-    padding: 50px;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.form__title {
-    font-size: 40px;
-    margin-bottom: 5px;
-    color: #9f5125;
-}
-
-.form__container {
-    margin-top: 15px;
-    display: grid;
-    gap: 30px;
-}
-
-.form__group {
-    position: relative;
-}
-
-.form__input{
-    width: 100%;
-    background: none;
-    font-size: 1rem;
-    padding: .6em .3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid;
-    font-family: 'Arima', cursive;
-}
-
-.form__input:focus + .form__label, 
-.form__input:not(:placeholder-shown) + .form__label {
-
-    transform: translateY(-12px) scale(.7);
-    transform-origin: left top;
-    color: #441f0b;
-}
-
-.form__label{
-    color: rgb(245, 157, 84);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, color .3s;
-
-}
-
-.form__submit {
-    background: rgb(245, 157, 84);
-    color: white;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: .8em .0;
-    border: none;
-    border-radius: .5em;
-    cursor: pointer;
-    box-shadow: 0px 2px 3px 2px rgba(50, 50, 50, 0.4);
-}
-
-.form__submit:active {
-    box-shadow: inset 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
-    background-color: #9f5125;
-}
-
-.form__line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform 4.5s;
-}
-
-.carta {
-    position: relative;
-    width: 100%;
-    height: 900px;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-}
-
-.nav-carta {
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #9f5125;
-    border: 5px #9f5125 outset;
-    justify-content: space-evenly;
-    align-items:center;
-    height: 100%;
-    width: 25%;
-
-}
-
-.nav-carta h1 {
-    font-size: 4em;
-    margin-top: 10%;
-    color: #441f0b;
-    font-family: 'Arima', cursive;
-}
-
-.nav-carta button {
-    font-family: 'Arima', cursive;
-    font-size: 3em;
-    margin-top: 20%;
-    background-color: #9f5125;
-    border-radius: 10px;
-    color: #e8cba8;
-    padding: 0 20% 0 20%;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-.nav-carta button:hover {
-    transition: .3s ease all;
-    color:rgb(245, 157, 84);
-}
-
-.nav-carta img {
-    position: relative;
-    transform: scale(0.7);
-    align-self: flex-start;
-    bottom: -3%;
-}
-
-.seccion-carta {
-    position: relative;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 75%;
-    opacity: 0;
-    transition: 3s ease all;
-}
-
-.seccion-carta img{
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
-}
-
-.abierto {
-    display: flex;
-    opacity: 1;
-}
-
-button.seleccionado {
-    text-decoration: underline;
-}
-
-.comida{
-    text-align: center;
-    margin-top: 100px;
-    color: #441f0b;
-}
-.pdos{
-    margin-top: 105px;
-    text-align: center;
-    color:#9f5125;
-}
-.padre{
-    position: absolute;
-    display:flex;
-    flex-direction: column;
-}
-.hijo1{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-}
-.hijo2{
-    display: flex;
-    align-items: center;
-    align-content: flex-start;
-    justify-content: center;
-}
-
 .quienes-somos {
     position: relative;
     margin: 0;
@@ -835,9 +441,392 @@ button.seleccionado {
     color:#441f0b;
 }
 
+.carta {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-carta {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #9f5125;
+    border: 5px #9f5125 outset;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 100%;
+    width: 25%;
+
+}
+
+.nav-carta h1 {
+    font-size: 4em;
+    margin-top: 10%;
+    color: #441f0b;
+    font-family: 'Arima', cursive;
+}
+
+.nav-carta button {
+    font-family: 'Arima', cursive;
+    font-size: 3em;
+    margin-top: 20%;
+    background-color: #9f5125;
+    border-radius: 10px;
+    color: #e8cba8;
+    padding: 0 20% 0 20%;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-carta button:hover {
+    transition: .3s ease all;
+    color:rgb(245, 157, 84);
+}
+
+.nav-carta img {
+    position: relative;
+    transform: scale(0.7);
+    align-self: flex-start;
+    bottom: -3%;
+}
+
+.seccion-carta {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 75%;
+    opacity: 0;
+    transition: 3s ease all;
+}
+
+.seccion-carta img{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.abierto {
+    display: flex;
+    opacity: 1;
+}
+
+button.seleccionado {
+    text-decoration: underline;
+}
+
+.comida{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 100px;
+    color: #441f0b;
+}
+.pdos{
+    font-size: 1.5em;
+    margin-top: 105px;
+    text-align: center;
+    color:#441f0b;
+}
+.padre{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+}
+
+.promos {
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 3%),url(../img/cafe.jpg);
+}
+
+.container {
+    display: none;
+}
+
+.hola{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 100px;
+}
+
+.form {
+    background-color: antiquewhite;
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 400px;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.form__title {
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #9f5125;
+}
+
+.form__container {
+    margin-top: 15px;
+    display: grid;
+    gap: 30px;
+}
+
+.form__group {
+    position: relative;
+}
+
+.form__input{
+    width: 100%;
+    background: none;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    font-family: 'Arima', cursive;
+}
+
+.form__input:focus + .form__label, 
+.form__input:not(:placeholder-shown) + .form__label {
+
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #441f0b;
+}
+
+.form__label{
+    color: rgb(245, 157, 84);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+
+}
+
+.form__submit {
+    background: rgb(245, 157, 84);
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em .0;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px 2px rgba(50, 50, 50, 0.4);
+}
+
+.form__submit:active {
+    box-shadow: inset 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
+    background-color: #9f5125;
+}
+
+.form__line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform 4.5s;
+}
+
 #gatito-reserva {
     position: absolute;
     bottom: 9%;
     right: 25%;
+}
+
+.hamburger{
+    display: none;
+}
+
+#hamburger {
+    font-size: 2em;
+    color: #e8cba8;
+}
+
+@media screen and (max-width: 800px) {
+
+    .hamburger {
+        display: inline;
+        border-top: #e8cba8 1px solid;
+        margin: 0;
+        padding: 0 100%;
+
+    }
+
+    .menu {
+        display: none;
+        opacity: 0;
+        transition: 3s ease all;
+    }
+
+    .desplegado {
+        display: inline;
+        opacity: 1;
+    }
+
+    #header-home {
+        display: flex;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(to top, #e8cba8 0%, rgb(0,0,0,0) 5%), url(../img/gato-header-4b.jpg);
+        background-size: 100% 300px;
+    }
+
+    .titulo {
+        font-size: 40%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #441f0b;
+        height: auto;
+    }
+
+    .logo {
+        height: 100px;
+        margin: 0;
+    }
+
+    .menu {
+        border-top: #e8cba8 1px solid;
+        margin: 0;
+        padding: 0 100%;
+    }
+
+    .menu > a {
+        font-size: 1.5em;
+    }
+
+    footer {
+        height: 100px;
+    }
+
+    footer a {
+        font-size: 2em;
+    }
+
+    main {
+        flex-direction: column;
+    }
+  
+    .bienvenida {
+        width: 100%;
+    }
+    
+    .bienvenida h3 {
+        text-align: center;
+        font-size: 2em;
+        color: rgb(245, 157, 84);
+    }
+    
+    .bienvenida p{
+        text-align: justify;
+        font-size: 1em;
+        color: #441f0b;
+        margin: 2% 2%;
+    }
+    
+    .mapa {
+        width: 100%;
+        margin: 2% 2%;
+        border: 2px rgb(245, 157, 84) solid;
+    }
+    
+    .galeria {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gato {
+        margin: 5% 5%;
+    }
+
+    .titulo-animado {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 10vw;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1280px){
+    
+    .titulo h1 {
+        font-size: 10vw;
+    }
+
+    .titulo h4 {
+        font-size: 5vw;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .gato milo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .gato pixel {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .gato luna {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .gato mona {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .gato ginger {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .gato barney {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .gato kirby {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .gato dio {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .gato la-micha {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+
+
 }
 
