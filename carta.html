@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo2.ico">
+    <script src="https://kit.fontawesome.com/15afba09d8.js" crossorigin="anonymous"></script>
+    <title>Carta</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img src="img/logo4.png" alt="logo" width="100%" height="100%"></a></div>
+        <div class="hamburger"><a href="#" id="hamburger"><i class="fa-solid fa-bars"></i></a></div>
+        <div class="menu menu1" id="home"><a href="index.html">Home</a></div>
+        <div class="menu menu2" id="quienes-somos"><a href="quienes-somos.html">Quiénes somos</a></div>
+        <div class="menu menu3 " id="los-michis"><a href="los-michis.html">Los Michis</a></div>
+        <div class="menu menu4 actual" id="carta"><a href="carta.html">Carta</a></div>
+        <div class="menu menu5" id="reserva"><a href="reserva.html">Reserva</a></div>
+        <div class="fill"></div>
+    </nav>
+
+    <main class="carta">
+        <nav class="nav-carta">
+            <h1>Carta</h1>
+            <button id="btn-cafe" class="seleccionado">Café</button>
+            <button id="btn-salados">Salados</button>
+            <button id="btn-tortas">Tortas</button>
+            <img src="img/gatito-carta.png" alt="Gatito de Carta">
+        </nav>
+    
+        <section class="seccion-carta abierto" id="cafe">
+            <img src="img/cafe.jpg" alt="Café">
+            <div class="padre">
+                <div class="hijo1">
+                    <h1 class="comida">
+             Promo <br> Cafe con leche con 2 medialunas  <br> Puede cambiarse por jugo (solo de naranja) o te, mismo precio.
+            </h1>
+                </div>
+                 
+            <br><br>
+            <div class="hijo2">
+                <h1 class="pdos">
+                <u>Otras variedades</u>
+                <ul type="none">
+                    <li>Lagrima</li>
+                    <li>Cortado</li>
+                    <li>Puro</li>
+                </ul>
+            </h1> 
+            </div>
+            
+            </div>
+        </section>
+
+        <section class="seccion-carta" id="salados">
+            <img src="img/tostado.jpg" alt="Salados">
+
+            <div class="padre">
+            
+                <div class="hijo1">
+            <h1 class="comida">
+               Promo <br> Tostado de jamón y queso con jugo <br> Puede ser jugo de naranja o de frutilla
+            </h1>
+            
+            </div>
+            <div class="hijo2">
+            <h1 class="pdos">
+                 <u>Otras variedades</u> 
+                <ul type="none">
+                    <li>Papas Fritas</li>
+                    <li>Tostada con mermeladas</li>
+                    <li>Mani</li>
+                </ul>
+            </h1> 
+             <div>
+        </section>
+
+        <section class="seccion-carta" id="tortas">
+            <img src="img/chocotorta.jpg" alt="Tortas">
+            <div class="padre">
+                <div class="hijo1">
+    
+            <h1 class="comida">
+                
+                Promo <br> Submarino con chocotorta
+    
+            </h1>
+            </div>
+            <div class="hijo2">
+            <h1 class="pdos">
+                
+                <u>Otras tortas</u>
+                
+                <ul type="none">
+                    <li>Lemon pie</li>
+                    <li>Selva Negra</li>
+                    <li>Cheesecake</li>
+                </ul>
+            </h1> 
+             </div>
+    
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/carta.js"></script>
+
+    <footer>
+        <a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    
+</body>
+</html>
