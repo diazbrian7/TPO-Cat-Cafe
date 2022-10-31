@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="logo2.ico">
+    <link rel="icon" href="favicon/logo2.ico">
     <script src="https://kit.fontawesome.com/15afba09d8.js" crossorigin="anonymous"></script>
     <title>Reserva</title>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo"><a href="index.html"><img src="img/logo4.png" alt="logo" width="100%" height="100%"></a></div>
@@ -27,43 +29,43 @@
     <main class="reserva">
         <form action=" " name="formulario" class="form" method="get">
             <h2 class="form__title">Reservas</h2>
-              <div class="form__container">
-     
-                     <div class="form__group">
-                         <input type="text" name="name" id="name" class="form__input" placeholder=" " >
-                         <label for="name" class="form__label">Nombre:</label>
-                         <span class="form__line"></span>
-                     </div>
-     
-                    <div class="form__group">
-                         <input type="text" id="apellido" class="form__input" placeholder=" ">
-                         <label for="apellido" class="form__label">Apellido:</label>
-                         <span class="form__line"></span>
-                     </div>
-     
-                    <div class="form__group">
-                         <input type="tel" id="tel" class="form__input" placeholder=" ">
-                         <label for="tel" class="form__label">Telefóno:</label>
-                         <span class="form__line"></span>
-                    </div>
-     
-                    <div class="form__group">
-                         <input type="text" id="mail" class="form__input" placeholder=" ">
-                         <label for="mail" class="form__label">E-mail:</label>
-                         <span class="form__line"></span>
-                    </div>
-                    <div class="form__group">
-                     <input type="number" name="personas" id="personas" class="form__input" placeholder=" ">
-                     <label for="personas" class="form__label">Personas:</label>
-                     <span class="form__line"></span>
+            <div class="form__container">
+
+                <div class="form__group">
+                    <input type="text" name="name" id="name" class="form__input" placeholder=" ">
+                    <label for="name" class="form__label">Nombre:</label>
+                    <span class="form__line"></span>
                 </div>
-                    <input type="date" class="form__date" value="Fecha" required>
-                    <input type="time" class="form__time " value="Hora" required min ="09:00" max="19:00">
-                    <input type="submit" name="btn" id="btn" class="form__submit" value="Reservar">
+
+                <div class="form__group">
+                    <input type="text" id="apellido" class="form__input" placeholder=" ">
+                    <label for="apellido" class="form__label">Apellido:</label>
+                    <span class="form__line"></span>
+                </div>
+
+                <div class="form__group">
+                    <input type="tel" id="tel" class="form__input" placeholder=" ">
+                    <label for="tel" class="form__label">Telefóno:</label>
+                    <span class="form__line"></span>
+                </div>
+
+                <div class="form__group">
+                    <input type="text" id="mail" class="form__input" placeholder=" ">
+                    <label for="mail" class="form__label">E-mail:</label>
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group">
+                    <input type="number" name="personas" id="personas" class="form__input" placeholder=" ">
+                    <label for="personas" class="form__label">Personas:</label>
+                    <span class="form__line"></span>
+                </div>
+                <input type="date" class="form__date" value="Fecha" required>
+                <input type="time" class="form__time " value="Hora" required min="09:00" max="19:00">
+                <input type="submit" name="btn" id="btn" class="form__submit" value="Reservar">
             </div>
-     
-     
-         </form>
+
+
+        </form>
 
         <img src="img/gatito-reserva.png" alt="Gatito de Reserva" id="gatito-reserva">
 
@@ -81,4 +83,5 @@
     <script src="js/hamburger.js"></script>
 
 </body>
+
 </html>
